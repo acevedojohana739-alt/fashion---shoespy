@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fashion Shoes</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#fff;
+color:#333;
+}
+
+/* HEADER */
+
+header{
+background:white;
+position:sticky;
+top:0;
+z-index:1000;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.logo{
+font-size:32px;
+font-weight:bold;
+}
+
+.menu a{
+text-decoration:none;
+color:#000;
+margin:0 15px;
+font-weight:bold;
+transition:.3s;
+}
+
+.menu a:hover{
+color:#e63946;
+}
+
+/* BANNER */
+
+.banner{
+height:85vh;
+background:url('https://cdn.runrepeat.com/storage/gallery/buying_guide_primary/214/214-best-chunky-sneakers-001-16187842-main.jpg') center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.banner-content{
+background:rgba(255,255,255,.9);
+padding:40px;
+border-radius:15px;
+text-align:center;
+animation:aparecer 1.5s ease;
+}
+
+.banner-content h1{
+font-size:55px;
+margin-bottom:15px;
+}
+
+.banner-content p{
+font-size:20px;
+}
+
+
+
+/* BENEFICIOS */
+.beneficios{padding:80px 8%;background:#fafafa;text-align:center;}
+.beneficios h2{font-size:38px;margin-bottom:15px;color:#111;}
+.beneficios .subtitulo{max-width:700px;margin:0 auto 50px;color:#666;font-size:18px;}
+.beneficios-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;}
+.beneficio{background:#fff;padding:35px 25px;border-radius:18px;box-shadow:0 10px 25px rgba(0,0,0,.08);transition:.4s;}
+.beneficio:hover{transform:translateY(-10px);box-shadow:0 18px 35px rgba(0,0,0,.15);}
+.beneficio span{font-size:55px;display:block;margin-bottom:15px;}
+
+@keyframes aparecer{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* PRODUCTOS */
+
+.productos{
+padding:70px 8%;
+}
+
+.productos h2{
+text-align:center;
+margin-bottom:40px;
+font-size:35px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.card h3{
+padding:15px;
+}
+
+.card p{
+padding:0 15px 15px;
+font-weight:bold;
+color:#e63946;
+}
+
+.btn-comprar{
+display:block;
+margin:15px;
+padding:12px;
+background:black;
+color:white;
+text-decoration:none;
+text-align:center;
+border-radius:8px;
+transition:.3s;
+}
+
+.btn-comprar:hover{
+background:#444;
+}
+
+/* TESTIMONIOS */
+
+.testimonios{
+background:#f7f7f7;
+padding:70px 8%;
+}
+
+.testimonios h2{
+text-align:center;
+margin-bottom:30px;
+}
+
+.opinion{
+background:white;
+padding:20px;
+border-radius:10px;
+margin:15px 0;
+box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+/* CONTACTO */
+
+.contacto{
+padding:70px 8%;
+text-align:center;
+}
+
+.contacto h2{
+margin-bottom:20px;
+}
+
+/* FOOTER */
+
+footer{
+background:#000;
+color:white;
+text-align:center;
+padding:40px 20px;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+width:65px;
+height:65px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:35px;
+text-decoration:none;
+color:white;
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+transition:.3s;
+}
+
+.whatsapp:hover{
+transform:scale(1.1);
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">FA$HI0N $H0ES</div>
+
+<nav class="menu">
+<a href="#inicio">Inicio</a>
+<a href="#productos">Productos</a>
+<a href="#opiniones">Opiniones</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+</header>
+
+<section class="banner" id="inicio">
+
+<div class="banner-content">
+<h1>FA$HI0N $H0ES</h1>
+<p>Los mejores calzados con estilo y comodidad.</p>
+</div>
+
+</section>
+  <section class="beneficios">
+<h2>¿Por qué elegir Fashion Shoes?</h2>
+<p class="subtitulo">Nos esforzamos por ofrecer mucho más que un calzado. Brindamos calidad, comodidad y una experiencia de compra segura.</p>
+<div class="beneficios-grid">
+<div class="beneficio"><span>🚚</span><h3>Envíos Rápidos</h3><p>Entregas rápidas y seguras.</p></div>
+<div class="beneficio"><span>⭐</span><h3>Calidad Premium</h3><p>Modelos seleccionados por comodidad y durabilidad.</p></div>
+<div class="beneficio"><span>🔒</span><h3>Compra Segura</h3><p>Atención directa por WhatsApp.</p></div>
+<div class="beneficio"><span>👟</span><h3>Moda Actual</h3><p>Las últimas tendencias en calzados.</p></div>
+<div class="beneficio"><span>💬</span><h3>Atención Personalizada</h3><p>Te ayudamos a elegir el modelo ideal.</p></div>
+<div class="beneficio"><span>💯</span><h3>Clientes Satisfechos</h3><p>Compromiso con calidad y servicio.</p></div>
+</div>
+</section>
+    
+<h2>¿Por qué elegir Fashion Shoes?</h2>
+<div class="beneficios-grid">
+
+<div class="beneficio">
+
+<h3>Envíos Rápidos</h3>
+<p>Entregamos tus pedidos de forma rápida y segura.</p>
+</div>
+
+<div class="beneficio">
+
+<h3>Calidad Garantizada</h3>
+<p>Productos seleccionados con los mejores estándares.</p>
+</div>
+
+<div class="beneficio">
+
+<h3>Pagos Seguros</h3>
+<p>Compra con total confianza y seguridad.</p>
+</div>
+
+<div class="beneficio">
+
+<h3>Atención Personalizada</h3>
+<p>Te ayudamos a elegir el calzado ideal.</p>
+</div>
+<div class="card">
+</div>
+
+</section>
+
+<section class="productos" id="productos">
+
+<h2>Calzados Destacados</h2>
+
+<div class="grid">
+
+<!-- DUPLICA ESTA TARJETA PARA MÁS PRODUCTOS -->
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2Fungn5O8qAc93tOq4RR2c1AM_QcsKsZi2g&s">
+<h3>Fashion Rose Premium</h3>
+<p>U$ 95</p>
+<a href="https://wa.me/595982234254" class="btn-comprar">Comprar Ahora</a>
+</div>
+
+<div class="card">
+<img src="https://nb.scene7.com/is/image/NB/u9060asp_nb_05_i?$pdpflexf2$&wid=440&hei=440">
+<h3>New Style Shoes</h3>
+<p>U$ 120</p>
+<a href="https://wa.me/595982234254" class="btn-comprar">Comprar Ahora</a>
+</div>
+  <div class="card">
+<img src="https://m.media-amazon.com/images/I/71H1AxZrY4L._AC_SL1500_.jpg">
+<h3>K KIP WOK</h3>
+<p>U$ 130</p>
+<a href="https://wa.me/595982234254" class="btn-comprar">Comprar Ahora</a>
+</div>
+<section class="ofertas">
+
+<div class="card">
+<img src="https://ortorex.es/wp-content/uploads/2024/04/Chunky-Running-Sneakers-Casual-Shoes-ORTOREX-1-jpg.webp">
+<h3>Urban Style</h3>
+<p>US$ 120</p>
+<a href="https://wa.me/595982234254" class="btn-comprar">Comprar Ahora</a>
+</div>
+<section class="ofertas">
+  
+</div>
+  <div class="card">
+<h2>🔥 Ofertas de la Semana</h2>
+
+<div class="oferta-box">
+
+<h3>20% DE REINTEGRO!!!</h3>
+
+<p>En modelos seleccionados hasta agotar stock.</p>
+
+<a href="https://wa.me/595982234254" class="btn-comprar">
+Consultar Oferta
+</a>
+<div class="card">
+</div>
+
+</section>
+</div>
+
+</section>
+
+<section class="testimonios" id="opiniones">
+
+<h2>Opiniones de Clientes</h2>
+
+<div class="opinion">
+⭐⭐⭐⭐⭐
+<p>"Excelente calidad y entrega rápida."</p>
+<strong>- María Gómez</strong>
+</div>
+
+<div class="opinion">
+⭐⭐⭐⭐⭐
+<p>"Muy cómodos y modernos."</p>
+<strong>- Carlos Fernández</strong>
+</div>
+
+<div class="opinion">
+⭐⭐⭐⭐⭐
+<p>"Volvería a comprar sin duda."</p>
+<strong>- Ana López</strong>
+</div>
+
+</section>
+    <div class="card">
+   <section class="redes">
+<br>
+
+</div>
+ <br>
+ <div class="card">  
+   
+<h2>📍 Nuestra Ubicación</h2>
+<section class="ubicacion">
+</div>
+
+<iframe
+src="https://maps.google.com/maps?q=Av.%20Adrian%20Jara%20Ciudad%20del%20Este&t=&z=15&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="350"
+style="border:0;"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+</div>
+  
+<h2>Contacto</h2>
+</section>
+<p>📱 Johana:+595 982 234 254</p>
+<p>📱 Ariel: +595 986 867549</p>
+<p>📱 Lucas: +595 973 703999</p>
+<p>📱 Rodney:+595 983 197351</p>
+<p>📱 Nicole: +595 976 315476</p>
+<p>📱 Nathalia:+595 982 422 491</p>
+
+</section>
+
+<footer>
+
+<h3>Fashion Shoes</h3>
+
+<p>Calidad, estilo y comodidad en cada paso.</p>
+
+<br>
+
+<p>📍 Av. Adrián Jara - Ciudad del Este</p>
+
+<p>📞 +595 982 234254</p>
+
+<br>
+
+<p>©️ 2026 Fashion Shoes</p>
+
+</footer>
+
+<a href="https://wa.me/595982234254" class="whatsapp">💬</a>
+<a href="https://wa.me/595 986 867549" class="whatsapp">💬</a>
+  <a href="https://wa.me/595 973 703999" class="whatsapp">💬</a>
+   <a href="https://wa.me/595 983 197351" class="whatsapp">💬</a>
+</body>
+</html>
